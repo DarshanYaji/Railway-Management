@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+.wrapper{
+	width:600px;
+	background:#eee;
+	margin: 0 auto 0 auto;
+}
+
+
+.heading{
+	height:100px;
+	background:yellow;
+	padding: 20px;
+	text-align:center;
+}
+
+.navigation{
+	height:50px;
+	background:lightgreen;
+}
+
+.content{
+	min-height:400px;
+	background:#ddd;
+	width: 400px;
+}
+
+
+.sidebar{
+	width:200px;
+	float:right;
+	background:lightblue;
+	min-height:400px;
+}
+
+.footer{
+	clear:both;
+	background:black;
+	height:400px;
+	color:white;
+	text-align:center;
+	padding:20px;
+}
+
+	
+	
+}

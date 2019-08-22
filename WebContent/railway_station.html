@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select
+ {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border:1px solid #ccc;
+box-sizing:border-box;
+}
+
+ input[type=submit]
+ {
+ width:100%;
+ background-color:#4CAF50;
+ color:white;
+ padding:14px 20px;
+ margin:8px 0;
+ border:none;
+ border-radius:4px;
+ cursor:pointer;
+ }
+
+input[type=submit]:hover
+{
+background-color: #45a049;
+}
+
+div
+{
+border-radius: 5px;
+background-color: #f2f2f2;      
+padding: 20px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<center>
+<h2>
+STATION INFORMATION
+</h2>
+</center>
+<body>
+<div>
+
+<form action="Station">
+<label for="station_name"><b><i> Station Name:</i></b> </label> <input type="text" name="station_name" placeholder="enter station name"/><br/><br/> 
+<label for="s_id"><b><i> Station Code:</i></b> </label> <input type="text" name="s_id" placeholder="enter the station code" /><br/><br/>  
+ 
+<label for="train_no"> <b><i>Train Number: </i></b></label> <input type="text" name="train_no" placeholder="enter  train numnber"/><br/><br/> <br>
+
+
+<label for="platforms"><b><i> Number of Train Platforms:</i></b> </label> <input type="number" name="platforms" /><br/><br/>  
+
+<br><br>
+<p><input type="submit" value="ENTER"/>  </p>
+</form>
+
+</div>
+</body>
+</html>

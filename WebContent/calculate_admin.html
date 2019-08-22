@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script>
+function d()
+{
+	document.f1.pri.value=document.f1.opt.value;
+	document.f1.hd.value=document.f1.opt.item(document.f1.opt.selectedIndex).text;
+}
+</script>
+</head>
+<body>
+<form method="post" action="calculate_admin.jsp" name="f1">
+Train Name:<select name="opt" onchange="d()">
+<option>select</option>
+<option value="200">Coorg Express</option>
+<option value="400">Kaveri Intercity</option>
+<option value="500">Karnataka Passenger</option>
+<option value="100">Konkan Passenger</option>
+<option value="300">Mahamaya Express</option>
+<option value="600">Shathabdi Express</option>
+</select>
+<br>
+<br>
+ Price:<input type="text" name="pri" readonly>
+<input type="hidden" name="hd">
+<br>
+<br>
+Enter no of passengers:<input type="text" name="qty">
+<br>
+<br>
+<input type="submit" value="find total amount">
+</form>
+</body>
+</html>

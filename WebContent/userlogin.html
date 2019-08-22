@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script type="text/javascript">
+    history.pushState(null,null,location.href);
+    window.onpopstate = function () {
+	history.go(1);
+    }
+    </script>
+<meta charset="ISO-8859-1">
+<title>login and registration here</title>
+    <link rel="stylesheet" href="style_user_login.css">
+</head>
+ <center>
+        <h1><font color="Papayawhip">User Login </h1><br/><br/>
+</center>
+<body>
+      <div class ="login page">
+      <div class="form">
+      
+      <form action="User" method="post" >
+      <input type="text" pattern="[A-Za-z ]{1,20}"  name="username" placeholder="Username" required/>
+       <input type="number" maxlength="12" minlength="12" name="aadhar" placeholder="Aadhar Number" required/>
+      <input type="password" name="Passwords" placeholder="Password" required/>
+   
+    <p><input type="submit"  value="LOGIN"/></p><br/><br/>
+    
+    <a href="Create.html"><font size='3' face='arial' color='yellow'>Create Your New Account Here</font></a>
+    </form>
+      <script src='https"??code.jquery.com/jquery-3.2.1.min.js'></script>
+      
+      <script>
+      
+      
+      $('.message a').click(function(){
+    	$('form').animate({height:"toggle",opacity: "toggle"}, "slow")  
+    })
+      </script>
+      
+      
+      </div>
+
+
+
+
+</body>
+
+</html>

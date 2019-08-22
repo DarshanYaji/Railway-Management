@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select
+ {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border:1px solid #ccc;
+box-sizing:border-box;
+}
+
+ input[type=submit]
+ {
+ width:100%;
+ background-color:#4CAF50;
+ color: white;
+ padding:14px 20px;
+ margin:8px 0;
+ border:none;
+ border-radius:4px;
+ cursor:pointer;
+ }
+
+input[type=submit]:hover
+{
+background-color: #45a049;
+}
+
+div
+{
+border-radius: 5px;
+background-color: #f2f2f2;      
+padding: 20px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<center>
+<h2>
+TICKET INFORMATION
+</h2>
+</center>
+<body>
+<div>
+
+<form action="Ticket">
+
+<label for="ticket_no"><b><i> Ticket Code:</i></b> </label> <input type="text" name="ticket_no" placeholder="enter the ticket number" /></br></br> 
+ <label for="train_no"><b><i> Train Number:</i></b>  </label> <input type="text" name="train_no" placeholder="enter train number"/> </br></br>
+<label for="p_id"><b><i> Passenger ID:</i></b>  </label> <input type="text" name="p_id" placeholder="enter passenger id"/> </br></br>
+<label for="no_of_passenger"><b><i> Number of Passengers:</i></b>  </label> <input type="number" name="no_of_passenger" /> </br></br>
+
+<br><br>
+<p><input type="submit" value="ENTER"/>  </p>
+</form>
+
+</div>
+</body>
+</html>

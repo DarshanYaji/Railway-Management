@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+body{
+	background-image:url(train.jpg);
+	height: 100vh;
+	background-size:cover;
+	background-position:cover;	
+	
+}
+  .form button{
+  
+   font-family:"Roboto" ,sans-serif;
+   text-transform: uppercase;
+   outline: 0;
+   background:grey;
+   width:  100%;
+   border:  0;
+   padding:  15px;
+   color:  mistyrose;
+   font-size:14px;
+   cursor:pointer; 
+  }
+</style>
+</head>
+<body>
+
+<form action="book_ticket" method="post">
+        <center>
+        <h1><marquee bgcolor="gainsboro">Book Ticket Here </marquee> </h1><br/><br/>
+     <table>
+     <tr>
+         <td>From:</td>
+         <td><select name="from_place" size="1">
+         <option value="Mangalore">Mangalore</option>
+         <option value="Bangalore">Bangalore</option>
+         <option value="Mysore">Mysore</option>
+         <option value="Virajpet">Virajpet</option>
+         <option value="Madikeri">Madikeri</option>
+         <option value="Margoa">Margoa</option>
+         <option value="Shirur">Shirur</option>
+         <option value="Bailur">Bailur</option>
+         <option value="Murdeshwar">Murdeshwar</option>
+          <option value="Shimoga">Shimoga</option>
+            <option value="Mumbai">Mumbai</option>
+         </td></tr>
+     <tr>
+     <td>To:</td>
+           <td><select name="to_place" size="1" >
+         <option value="Mangaluru">Mangalore</option>
+         <option value="Bengaluru">Bangalore</option>
+         <option value="Mysuru">Mysore</option>
+         <option value="Virajpete">Virajpet</option>
+         <option value="Madikeree">Madikeri</option>
+         <option value="Margoaa">Margoa</option>
+         <option value="Shiruru">Shirur</option>
+         <option value="Bailuru">Bailur</option>
+          <option value="Murdeshwara">Murdeshwar</option>
+         <option value="Shivamogga">Shimoga</option>
+         <option value="Mumbaii">Mumbai</option>
+         </td></tr>
+             
+        <tr>
+            <td>Name:</td>
+            <td><input type="text"  pattern="[A-Za-z ]{1,20}"  name="name" required/></td></tr>
+            
+            <tr>
+            <td>Aadhar Number:</td>
+            <td><input type="number" maxlength="12" minlength="12"  name="aadhar" required/></td></tr>
+            
+            
+              <tr>
+         <td>Train Name:</td>
+           <td><select name="train_name" size="1">
+         <option value="Karnataka Passenger">Karnataka Passenger</option>
+         <option value="Kaveri Intercity">Kaveri Intercity</option>
+         <option value="Mahamaya Intercity">Mahamaya Intercity</option>
+         <option value="Coorg Express"> Coorg Express</option>
+         <option value="Shathabdi Express">Shathabdi Express</option>
+         <option value="Konkan Passenger">Konkan Passenger</option>
+          </td></tr>  
+            
+         <tr>
+         <td>Age:</td>
+         <td><input type="text"  name="age" required/></td>
+         </tr> 
+         
+        
+         
+         
+         <tr>
+         <td>Gender:</td>
+         <td>
+         <select name="gender" size="1">
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+         </td></tr> 
+          <tr>
+           <td>Date:</td>
+         <td><input type="date" name="date" required/></td></tr>
+          <td>No of Passengers:</td>
+         <td><input type="text"  name="passenger" required/></td>
+         </tr> 
+           <td>Seat No:</td>
+         <td><input type="text"   name="seat_no" required/></td>
+         </tr> 
+               <tr>
+               <tr>
+         <td>Amount:</td>
+         <td><input type="text"   name="payment" required/></td>
+          </tr>   
+            
+        </table> 
+        
+          <button>Book</button><br/><br/>
+          
+          <center><a href="Ticket_retrieve.jsp"><p><font  size= "5" color="Yellow"> View Trains</font></p></a></center><br/><br/><br/>
+           <center><a href ='admin_login.html'>Back</a></center> 
+      
+       
+    
+        </table> 
+ </form>
+ </form>       
+</body>
+</html>
